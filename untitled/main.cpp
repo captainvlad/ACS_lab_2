@@ -20,22 +20,23 @@ double function(double x_1, double y_1) {
 double integral(double x_1, double x_2, double y_1, double y_2, double step){
 //    Integral calculation using Trapezoidal rule
     double result = 0;
+    double ress;
 
     for (x_2; x_2 >= x_1; x_2 -= step){
 
         for (double j = y_2; j >= y_1; j -= step){
-
+            ress += function(x_2, j);
             result += function(x_2, j) + function(x_2 - step, j - step);
 
         }
     }
-    return result / 2 * step;
+    return result / 2 * pow(step,2);
 }
 
 
 int main() {
-    double step = (double) 1/2000;
+    double step = (double) 1/1000;
 
-    std:: cout << integral(0, 5, 0, 5, step);
+    std:: cout << integral(0, 2, 0, 7, step);
     return 0;
 }
