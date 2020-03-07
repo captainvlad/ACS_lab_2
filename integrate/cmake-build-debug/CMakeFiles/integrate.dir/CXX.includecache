@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vlad/Desktop/2_year/ACS/lab_2/integrate/main.cpp
+iostream
+-
+cmath
+-
+fstream
+-
+chrono
+-
+cassert
+-
+filesystem
+-
+atomic
+-
+tuple
+-
+

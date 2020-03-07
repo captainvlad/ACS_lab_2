@@ -1,0 +1,8 @@
+0.001    #Relative accuracy
+5       #'m' parameter
+-100    #Bottom x integration bound
+100     #Upper x integration bound
+-100    #Bottom y integration bound
+100     #Upper y integration bound
+1       #threads
+100     #Starting partition
